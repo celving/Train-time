@@ -21,6 +21,8 @@
     <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
 </head>
 
 <body>
@@ -28,8 +30,8 @@
     <div class="container">
 
         <!-- Jumbotron -->
-        <div class="jumbotron" style="background-color: darkslategray; color: white">
-            <h1 class="text-center">Train Scheduler</h1>
+        <div class="jumbotron bg-secondary">
+            <h1 class="text-center text-white">Train Scheduler</h1>
         </div>
 
         <div class="row">
@@ -83,7 +85,7 @@
                                 <label for="frequency-input">Frequency (min)</label>
                                 <input class="form-control" id="frequency-input" type="text">
                             </div>
-                            <button class="btn btn-primary float-right btn-info" id="add-train">Submit</button>
+                            <button class="btn btn-primary float-right btn-secondary" id="add-train">Submit</button>
                         </form>
 
                     </div>
