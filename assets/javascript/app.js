@@ -54,13 +54,13 @@ $("#add-train").on("click", function(event) {
     console.log(startTime);
     console.log(frequency);
   
-    var startTimeConverted = moment(startTime, "HH:mm").subtract(1, "years");
+    var startTimeConverted = moment.unix(startTime).format("HH:mm");
     console.log(startTimeConverted);
 
     var currentTime = moment();
     console.log(moment(currentTime).format("hh:mm"));
 
-    var timeDifference = moment().diff(moment(startTimeConverted), "minutes");
+    var timeDifference = moment().diff(moment(startTimeConverted, "X"), "minutes");
     console.log(timeDifference);
 
     var remainder = timeDifference % frequency;
